@@ -1,0 +1,50 @@
+blocks:
+  - name: Step1
+    step:
+      integration: javascript
+      javascript:
+        body: |
+          return "Sync test - job: " + Date.now();
+        superblocksMetadata:
+          pluginVersion: 0.0.9
+metadata:
+  description: ""
+  folder: 557c579f-215f-4743-ac8d-d128f9668bed
+  id: 7b6d9572-048b-428b-84b8-116fc5503f32
+  name: george_job_sync_test
+  organization: 71b53980-0a9d-45dc-a4e8-5efd62ebfb1f
+  tags: {}
+  timestamps: {}
+  version: ""
+trigger:
+  job:
+    dayOfMonth: 1
+    days:
+      friday: false
+      monday: false
+      saturday: false
+      sunday: true
+      thursday: false
+      tuesday: false
+      wednesday: false
+    frequency: 1
+    interval: INTERVAL_MONTH
+    options:
+      profiles:
+        modes:
+          deployed:
+            available:
+              - 431d2084-be9f-46c4-b44e-8632bb72084d
+              - bedc7639-78d3-4b13-ad79-5fc86dfc94d5
+            default: 431d2084-be9f-46c4-b44e-8632bb72084d
+          editor:
+            available:
+              - 431d2084-be9f-46c4-b44e-8632bb72084d
+              - bedc7639-78d3-4b13-ad79-5fc86dfc94d5
+            default: bedc7639-78d3-4b13-ad79-5fc86dfc94d5
+          preview:
+            available: []
+            default: ""
+      sendEmailOnFailure: true
+    time: 2023-11-15T22:00:00Z
+    timezoneLocale: Europe/Athens
