@@ -4,7 +4,7 @@ blocks:
       integration: javascript
       javascript:
         body: |
-          return "sync test - job: " + Date.now();
+          return "sync test - job: " + Date.now() + " ms";
         superblocksMetadata:
           pluginVersion: 0.0.9
 metadata:
